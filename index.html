@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17232D">
+  <meta name="description" content="Find experienced product, design and technology specialists with URA Technology. Hire one expert, extend your team or bring the right people together to build a digital product.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://uratechnology.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Build the Right Digital Team | URA Technology">
+  <meta property="og:description" content="Connect your business with experienced product, design and technology specialists.">
+  <meta property="og:url" content="https://uratechnology.com/">
+  <title>Build the Right Digital Team | URA Technology</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #17232D;
+      --color-primary-dark: #101A22;
+      --color-primary-light: #344754;
+      --color-secondary: #243746;
+      --color-secondary-dark: #192A36;
+      --color-secondary-light: #E9EDF0;
+      --color-accent: #C8F36B;
+      --color-heading: #17232D;
+      --color-text: #384650;
+      --color-text-muted: #52616B;
+      --color-background: #F5F6F2;
+      --color-background-alt: #FFFFFF;
+      --color-surface: #FFFFFF;
+      --color-surface-alt: #E9EDF0;
+      --color-border: #D5DDE2;
+      --color-border-strong: #AAB7C0;
+      --color-interactive: #243746;
+      --color-interactive-hover: #17232D;
+      --color-focus: #7B9D35;
+
+      --font-heading: "Space Grotesk", sans-serif;
+      --font-body: "DM Sans", sans-serif;
+
+      --container: 1240px;
+      --gutter: clamp(20px, 4vw, 48px);
+      --section-space: clamp(76px, 10vw, 132px);
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 30px;
+      --shadow-soft: 0 18px 50px rgba(23, 35, 45, .08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--color-background);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body.menu-open { overflow: hidden; }
+
+    img { max-width: 100%; display: block; }
+
+    a { color: inherit; text-decoration: none; }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    button, input { font: inherit; }
+
+    button:focus-visible,
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 4px;
+    }
+
+    ::selection {
+      background: var(--color-accent);
+      color: var(--color-primary);
+    }
+
+    .container {
+      width: min(100% - (var(--gutter) * 2), var(--container));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--color-text-muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 24px;
+      height: 2px;
+      background: var(--color-accent);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 18px 0 20px;
+      color: var(--color-heading);
+      font-family: var(--font-heading);
+      font-size: clamp(36px, 5vw, 62px);
+      font-weight: 600;
+      letter-spacing: -.055em;
+      line-height: 1.04;
+    }
+
+    .section-intro {
+      max-width: 620px;
+      margin: 0;
+      color: var(--color-text-muted);
+      font-size: 17px;
+    }
+
+    .button {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 22px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.2;
+      transition: transform .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .button-primary {
+      background: var(--color-accent);
+      color: var(--color-primary);
+    }
+
+    .button-primary:hover { background: #D8FF8C; }
+
+    .button-dark {
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    .button-dark:hover { background: var(--color-secondary); }
+
+    .button-outline {
+      border-color: rgba(23, 35, 45, .22);
+      color: var(--color-primary);
+    }
+
+    .button-outline:hover {
+      border-color: var(--color-primary);
+      background: rgba(23, 35, 45, .04);
+    }
+
+    .arrow { font-size: 18px; line-height: 1; }
+
+    /* Navigation */
+
+    .site-header {
+      position: sticky;
+      z-index: 100;
+      top: 0;
+      border-bottom: 1px solid rgba(23, 35, 45, .08);
+      background: rgba(245, 246, 242, .92);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-wrap {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      color: var(--color-primary);
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border-radius: 11px;
+      background: var(--color-primary);
+      color: var(--color-accent);
+      font-family: var(--font-heading);
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -.08em;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -.04em;
+    }
+
+    .brand-name small {
+      display: block;
+      margin-top: -3px;
+      color: var(--color-text-muted);
+      font-family: var(--font-body);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .19em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(18px, 2.5vw, 34px);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--color-text);
+      font-size: 13px;
+      font-weight: 600;
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover { color: var(--color-primary); }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-actions .button {
+      min-height: 44px;
+      padding: 12px 18px;
+      font-size: 13px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-border);
+      border-radius: 50%;
+      background: transparent;
+      color: var(--color-primary);
+      cursor: pointer;
+    }
+
+    .menu-toggle span,
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      display: block;
+      width: 17px;
+      height: 2px;
+      border-radius: 2px;
+      background: currentColor;
+      transition: transform .2s ease;
+    }
+
+    .menu-toggle span { position: relative; }
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      position: absolute;
+      content: "";
+      left: 0;
+    }
+    .menu-toggle span::before { top: -6px; }
+    .menu-toggle span::after { top: 6px; }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      padding: clamp(66px, 8vw, 108px) 0 86px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      position: absolute;
+      z-index: -1;
+      top: 30px;
+      right: -210px;
+      width: 660px;
+      height: 660px;
+      border: 1px solid rgba(36, 55, 70, .10);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      top: 100px;
+      right: -95px;
+      width: 430px;
+      height: 430px;
+      border: 1px solid rgba(36, 55, 70, .10);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.03fr) minmax(420px, .97fr);
+      align-items: center;
+      gap: clamp(36px, 6vw, 86px);
+    }
+
+    .hero-copy { position: relative; z-index: 2; }
+
+    .hero h1 {
+      max-width: 720px;
+      margin: 24px 0;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: clamp(48px, 6.7vw, 82px);
+      font-weight: 600;
+      letter-spacing: -.075em;
+      line-height: .99;
+    }
+
+    .hero h1 span {
+      position: relative;
+      display: inline-block;
+      z-index: 0;
+    }
+
+    .hero h1 span::after {
+      position: absolute;
+      z-index: -1;
+      right: -5px;
+      bottom: 5px;
+      left: -4px;
+      height: 22%;
+      background: var(--color-accent);
+      content: "";
+      transform: rotate(-1.5deg);
+    }
+
+    .hero-copy > p {
+      max-width: 570px;
+      margin: 0;
+      color: var(--color-text-muted);
+      font-size: clamp(16px, 1.5vw, 19px);
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 34px;
+      color: var(--color-text-muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .note-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #77A936;
+      box-shadow: 0 0 0 5px rgba(119, 169, 54, .12);
+    }
+
+    .hero-art {
+      position: relative;
+      min-height: 530px;
+      display: grid;
+      place-items: center;
+    }
+
+    .orbit {
+      position: absolute;
+      width: min(100%, 510px);
+      aspect-ratio: 1;
+      border: 1px solid rgba(36, 55, 70, .18);
+      border-radius: 50%;
+    }
+
+    .orbit::before,
+    .orbit::after {
+      position: absolute;
+      border: 1px dashed rgba(36, 55, 70, .22);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .orbit::before { inset: 42px; }
+    .orbit::after { inset: 92px; }
+
+    .orbit-center {
+      position: relative;
+      z-index: 2;
+      width: 190px;
+      height: 190px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 50%;
+      background: var(--color-primary);
+      box-shadow: 0 25px 65px rgba(23, 35, 45, .22);
+      color: white;
+      text-align: center;
+    }
+
+    .orbit-center::before {
+      position: absolute;
+      inset: -12px;
+      border: 1px solid rgba(23, 35, 45, .2);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .orbit-center strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 30px;
+      letter-spacing: -.07em;
+      line-height: 1;
+    }
+
+    .orbit-center small {
+      display: block;
+      margin-top: 8px;
+      color: var(--color-accent);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .orbit-node {
+      position: absolute;
+      z-index: 3;
+      width: 174px;
+      padding: 15px;
+      border: 1px solid rgba(23, 35, 45, .09);
+      border-radius: 16px;
+      background: rgba(255,255,255,.96);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .orbit-node .node-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .node-symbol {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 10px;
+      background: var(--color-secondary-light);
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .orbit-node strong {
+      display: block;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .orbit-node small {
+      display: block;
+      margin-top: 3px;
+      color: var(--color-text-muted);
+      font-size: 10px;
+    }
+
+    .node-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #537B2A;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .node-status::before {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #83B34B;
+      content: "";
+    }
+
+    .node-one { top: 4%; left: 2%; }
+    .node-two { top: 13%; right: -2%; }
+    .node-three { right: 0; bottom: 8%; }
+    .node-four { bottom: 0; left: 4%; }
+
+    .hero-art-label {
+      position: absolute;
+      right: 8%;
+      bottom: -12px;
+      color: var(--color-text-muted);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .hero-art-label span { color: var(--color-primary); }
+
+    /* Proof strip */
+
+    .proof-strip {
+      padding: 27px 0;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      background: rgba(255,255,255,.55);
+    }
+
+    .proof-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .proof-label {
+      max-width: 180px;
+      color: var(--color-text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    .proof-names {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-around;
+      gap: 26px;
+    }
+
+    .proof-names span {
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: clamp(15px, 1.7vw, 21px);
+      font-weight: 700;
+      letter-spacing: -.05em;
+      text-align: center;
+    }
+
+    /* Engagement routes */
+
+    .routes-section { padding: var(--section-space) 0; }
+
+    .routes-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 54px;
+    }
+
+    .routes-head .section-heading { max-width: 650px; }
+
+    .route-list { border-top: 1px solid var(--color-border-strong); }
+
+    .route {
+      display: grid;
+      grid-template-columns: 70px minmax(220px, .9fr) minmax(250px, 1fr) 50px;
+      align-items: center;
+      gap: 26px;
+      padding: 30px 4px;
+      border-bottom: 1px solid var(--color-border);
+      transition: padding .25s ease, background .25s ease;
+    }
+
+    .route:hover {
+      padding-inline: 18px;
+      background: rgba(255,255,255,.6);
+    }
+
+    .route-number {
+      color: #8A969D;
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .route h3 {
+      margin: 0;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: clamp(21px, 2.3vw, 29px);
+      font-weight: 600;
+      letter-spacing: -.045em;
+      line-height: 1.15;
+    }
+
+    .route p {
+      max-width: 440px;
+      margin: 0;
+      color: var(--color-text-muted);
+      font-size: 14px;
+    }
+
+    .route-arrow {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--color-border);
+      border-radius: 50%;
+      color: var(--color-primary);
+      font-size: 20px;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .route:hover .route-arrow {
+      background: var(--color-accent);
+      transform: rotate(-35deg);
+    }
+
+    /* Dark capability section */
+
+    .expertise-section {
+      position: relative;
+      padding: var(--section-space) 0;
+      overflow: hidden;
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    .expertise-section::after {
+      position: absolute;
+      top: -270px;
+      right: -160px;
+      width: 650px;
+      height: 650px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .expertise-section .eyebrow { color: rgba(255,255,255,.65); }
+
+    .expertise-section .section-heading { color: #fff; }
+
+    .expertise-section .section-intro { color: rgba(255,255,255,.68); }
+
+    .expertise-top {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 62px;
+    }
+
+    .expertise-top > div:first-child { max-width: 700px; }
+
+    .expertise-top .section-intro { max-width: 360px; }
+
+    /* Exactly six custom service icons: two rows of three */
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid rgba(255,255,255,.18);
+      border-left: 1px solid rgba(255,255,255,.18);
+    }
+
+    .expertise-item {
+      min-height: 250px;
+      padding: 30px;
+      border-right: 1px solid rgba(255,255,255,.18);
+      border-bottom: 1px solid rgba(255,255,255,.18);
+      transition: background .25s ease;
+    }
+
+    .expertise-item:hover { background: rgba(255,255,255,.055); }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 28px;
+      border-radius: 16px;
+      background: var(--color-accent);
+      color: var(--color-primary);
+    }
+
+    .service-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .expertise-item h3 {
+      margin: 0 0 9px;
+      color: #fff;
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -.035em;
+    }
+
+    .expertise-item p {
+      max-width: 300px;
+      margin: 0;
+      color: rgba(255,255,255,.65);
+      font-size: 13px;
+    }
+
+    .expertise-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .expertise-foot p {
+      margin: 0;
+      color: rgba(255,255,255,.6);
+      font-size: 13px;
+    }
+
+    /* Talent section */
+
+    .talent-section { padding: var(--section-space) 0; }
+
+    .talent-layout {
+      display: grid;
+      grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+      gap: clamp(40px, 8vw, 110px);
+    }
+
+    .talent-copy {
+      position: sticky;
+      top: 120px;
+      align-self: start;
+    }
+
+    .talent-copy .section-heading { font-size: clamp(38px, 4.8vw, 58px); }
+
+    .talent-copy .button { margin-top: 28px; }
+
+    .talent-list { border-top: 1px solid var(--color-border-strong); }
+
+    .talent-person {
+      display: grid;
+      grid-template-columns: 58px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 18px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .person-initials {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--color-secondary-light);
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .talent-person h3 {
+      margin: 0;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -.025em;
+    }
+
+    .talent-person p {
+      margin: 3px 0 0;
+      color: var(--color-text-muted);
+      font-size: 12px;
+    }
+
+    .person-experience {
+      color: var(--color-text-muted);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .talent-caption {
+      margin: 18px 0 0;
+      color: var(--color-text-muted);
+      font-size: 11px;
+    }
+
+    /* Process */
+
+    .process-section {
+      padding: var(--section-space) 0;
+      background: var(--color-secondary-light);
+    }
+
+    .process-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 64px;
+    }
+
+    .process-heading .section-heading { max-width: 600px; }
+
+    .process-heading .section-intro { max-width: 370px; }
+
+    .process-track {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .process-track::before {
+      position: absolute;
+      top: 19px;
+      right: 10%;
+      left: 10%;
+      height: 1px;
+      background: rgba(23,35,45,.25);
+      content: "";
+    }
+
+    .process-step { position: relative; }
+
+    .process-marker {
+      position: relative;
+      z-index: 1;
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 30px;
+      border: 1px solid var(--color-primary);
+      border-radius: 50%;
+      background: var(--color-secondary-light);
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .process-step:nth-child(2) .process-marker,
+    .process-step:nth-child(4) .process-marker {
+      background: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+
+    .process-step h3 {
+      margin: 0 0 10px;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -.035em;
+    }
+
+    .process-step p {
+      max-width: 240px;
+      margin: 0;
+      color: var(--color-text-muted);
+      font-size: 13px;
+    }
+
+    /* Team composition */
+
+    .team-section {
+      padding: var(--section-space) 0;
+      overflow: hidden;
+    }
+
+    .team-panel {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+      align-items: center;
+      gap: 60px;
+      padding: clamp(30px, 5vw, 68px);
+      border-radius: var(--radius-lg);
+      background: var(--color-accent);
+    }
+
+    .team-panel::after {
+      position: absolute;
+      top: -80px;
+      right: -60px;
+      width: 260px;
+      height: 260px;
+      border: 1px solid rgba(23,35,45,.18);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .team-copy { position: relative; z-index: 1; }
+
+    .team-copy .eyebrow { color: rgba(23,35,45,.7); }
+
+    .team-copy h2 {
+      max-width: 510px;
+      margin: 18px 0;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: clamp(36px, 4.5vw, 56px);
+      font-weight: 600;
+      letter-spacing: -.06em;
+      line-height: 1.04;
+    }
+
+    .team-copy p {
+      max-width: 460px;
+      margin: 0;
+      color: rgba(23,35,45,.76);
+      font-size: 15px;
+    }
+
+    .team-copy .button {
+      margin-top: 26px;
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    .team-copy .button:hover { background: var(--color-secondary); }
+
+    .team-visual {
+      position: relative;
+      z-index: 1;
+      padding: 26px;
+      border: 1px solid rgba(23,35,45,.2);
+      border-radius: 22px;
+      background: rgba(255,255,255,.48);
+    }
+
+    .team-visual-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(23,35,45,.18);
+      color: var(--color-primary);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .team-role {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 14px;
+      padding: 17px 0;
+      border-bottom: 1px solid rgba(23,35,45,.15);
+    }
+
+    .role-index {
+      color: rgba(23,35,45,.55);
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .team-role strong {
+      display: block;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 14px;
+    }
+
+    .team-role small {
+      display: block;
+      margin-top: 2px;
+      color: rgba(23,35,45,.65);
+      font-size: 10px;
+    }
+
+    .role-tag {
+      padding: 6px 9px;
+      border: 1px solid rgba(23,35,45,.25);
+      border-radius: 999px;
+      color: var(--color-primary);
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .team-visual-note {
+      margin: 16px 0 0;
+      color: rgba(23,35,45,.62);
+      font-size: 10px;
+    }
+
+    /* FAQ */
+
+    .faq-section { padding: var(--section-space) 0; }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: minmax(240px, .7fr) minmax(0, 1.3fr);
+      gap: clamp(40px, 8vw, 100px);
+    }
+
+    .faq-list { border-top: 1px solid var(--color-border-strong); }
+
+    .faq-list details { border-bottom: 1px solid var(--color-border); }
+
+    .faq-list summary {
+      position: relative;
+      padding: 22px 42px 22px 0;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -.02em;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .faq-list summary::-webkit-details-marker { display: none; }
+
+    .faq-list summary::after {
+      position: absolute;
+      top: 18px;
+      right: 4px;
+      color: var(--color-primary);
+      font-family: var(--font-body);
+      font-size: 23px;
+      font-weight: 400;
+      content: "+";
+      transition: transform .2s ease;
+    }
+
+    .faq-list details[open] summary::after {
+      content: "−";
+      transform: rotate(180deg);
+    }
+
+    .faq-list details p {
+      max-width: 650px;
+      margin: -4px 0 24px;
+      color: var(--color-text-muted);
+      font-size: 14px;
+    }
+
+    /* Final CTA */
+
+    .final-cta {
+      position: relative;
+      padding: clamp(76px, 10vw, 130px) 0;
+      overflow: hidden;
+      background: var(--color-secondary);
+      color: #fff;
+      text-align: center;
+    }
+
+    .final-cta::before,
+    .final-cta::after {
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .final-cta::before { top: -330px; left: -160px; }
+    .final-cta::after { right: -170px; bottom: -360px; }
+
+    .final-cta .eyebrow { color: rgba(255,255,255,.7); }
+
+    .final-cta .eyebrow::before { background: var(--color-accent); }
+
+    .final-cta h2 {
+      max-width: 800px;
+      margin: 22px auto;
+      color: #fff;
+      font-family: var(--font-heading);
+      font-size: clamp(42px, 6vw, 72px);
+      font-weight: 600;
+      letter-spacing: -.065em;
+      line-height: 1.02;
+    }
+
+    .final-cta p {
+      max-width: 570px;
+      margin: 0 auto;
+      color: rgba(255,255,255,.68);
+      font-size: 16px;
+    }
+
+    .final-cta .button { margin-top: 30px; }
+
+    /* Footer */
+
+    .site-footer {
+      padding: 58px 0 30px;
+      background: var(--color-primary-dark);
+      color: #fff;
+    }
+
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.4fr .7fr .7fr;
+      gap: 60px;
+      padding-bottom: 54px;
+    }
+
+    .footer-brand .brand { color: #fff; }
+
+    .footer-brand .brand-name small { color: rgba(255,255,255,.55); }
+
+    .footer-brand > p {
+      max-width: 330px;
+      margin: 22px 0 0;
+      color: rgba(255,255,255,.6);
+      font-size: 13px;
+    }
+
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color: var(--color-accent);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .footer-col ul {
+      display: grid;
+      gap: 11px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer-col a,
+    .footer-col p {
+      margin: 0;
+      color: rgba(255,255,255,.68);
+      font-size: 13px;
+      transition: color .2s ease;
+    }
+
+    .footer-col a:hover { color: var(--color-accent); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.15);
+      color: rgba(255,255,255,.45);
+      font-size: 11px;
+    }
+
+    /* Mobile sticky conversion bar: exactly two CTAs */
+
+    .mobile-cta {
+      position: fixed;
+      z-index: 150;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+      border-top: 1px solid rgba(23,35,45,.12);
+      background: rgba(245,246,242,.96);
+      box-shadow: 0 -10px 30px rgba(23,35,45,.09);
+      backdrop-filter: blur(16px);
+    }
+
+    .mobile-cta .button {
+      min-height: 48px;
+      padding: 12px 10px;
+      font-size: 12px;
+    }
+
+    /* Motion and responsive behaviour */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1020px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(330px, .9fr);
+        gap: 25px;
+      }
+
+      .hero-art { min-height: 460px; }
+      .orbit-node { width: 150px; padding: 12px; }
+      .orbit-center { width: 160px; height: 160px; }
+      .route { grid-template-columns: 44px minmax(190px, .9fr) minmax(200px, 1fr) 44px; }
+      .team-panel { gap: 32px; }
+    }
+
+    @media (max-width: 800px) {
+      :root { --section-space: 82px; }
+
+      .nav-wrap { min-height: 72px; }
+
+      .menu-toggle { display: flex; }
+
+      .nav-actions .button { display: none; }
+
+      .nav-links {
+        position: fixed;
+        top: 72px;
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px var(--gutter) 24px;
+        border-bottom: 1px solid var(--color-border);
+        background: var(--color-background);
+      }
+
+      .nav-links.is-open { display: flex; flex-direction: column; }
+
+      .nav-links li { border-bottom: 1px solid var(--color-border); }
+
+      .nav-links a {
+        display: block;
+        padding: 16px 0;
+        font-size: 15px;
+      }
+
+      .hero { padding-top: 62px; }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .hero-copy { max-width: 700px; }
+
+      .hero-art {
+        width: min(100%, 570px);
+        min-height: 500px;
+        margin: 0 auto;
+      }
+
+      .routes-head,
+      .expertise-top,
+      .process-heading {
+        display: block;
+      }
+
+      .routes-head .button { margin-top: 22px; }
+
+      .expertise-top .section-intro,
+      .process-heading .section-intro { margin-top: 18px; }
+
+      .talent-layout,
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 42px;
+      }
+
+      .talent-copy { position: static; }
+
+      .team-panel {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 42px;
+      }
+
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 15px; }
+
+      .hero {
+        padding-top: 50px;
+        padding-bottom: 56px;
+      }
+
+      .hero h1 {
+        max-width: 560px;
+        font-size: clamp(44px, 12vw, 62px);
+      }
+
+      .hero-copy > p { font-size: 16px; }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .button { width: 100%; }
+
+      .hero-note { font-size: 11px; }
+
+      .hero-art {
+        min-height: 390px;
+        margin-top: 5px;
+      }
+
+      .orbit { width: min(100%, 380px); }
+
+      .orbit-center {
+        width: 132px;
+        height: 132px;
+      }
+
+      .orbit-center strong { font-size: 24px; }
+
+      .orbit-node {
+        width: 142px;
+        padding: 10px;
+      }
+
+      .node-symbol {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+      }
+
+      .orbit-node strong { font-size: 11px; }
+      .orbit-node small { font-size: 9px; }
+      .node-one { top: 0; left: 0; }
+      .node-two { top: 5%; right: 0; }
+      .node-three { right: 0; bottom: 0; }
+      .node-four { bottom: 0; left: 0; }
+
+      .hero-art-label {
+        right: 50%;
+        bottom: -18px;
+        width: max-content;
+        transform: translateX(50%);
+      }
+
+      .proof-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .proof-label { max-width: none; }
+
+      .proof-names {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 14px 24px;
+      }
+
+      .proof-names span { font-size: 16px; }
+
+      .route {
+        grid-template-columns: 32px minmax(0, 1fr) 40px;
+        gap: 12px;
+        padding: 24px 0;
+      }
+
+      .route h3 { font-size: 21px; }
+
+      .route p {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 13px;
+      }
+
+      .route-arrow {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        width: 38px;
+        height: 38px;
+      }
+
+      .expertise-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+      .expertise-item {
+        min-height: 225px;
+        padding: 20px 15px;
+      }
+
+      .expertise-item h3 { font-size: 17px; }
+      .expertise-item p { font-size: 12px; }
+      .service-icon { margin-bottom: 22px; }
+
+      .expertise-foot {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .talent-person {
+        grid-template-columns: 46px minmax(0, 1fr);
+        gap: 12px;
+      }
+
+      .person-initials {
+        width: 44px;
+        height: 44px;
+        font-size: 13px;
+      }
+
+      .talent-person h3 { font-size: 15px; }
+
+      .person-experience {
+        grid-column: 2;
+        margin-top: -8px;
+        font-size: 11px;
+      }
+
+      .process-track {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .process-track::before {
+        top: 18px;
+        bottom: 20px;
+        left: 18px;
+        width: 1px;
+        height: auto;
+      }
+
+      .process-step {
+        display: grid;
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 0 18px;
+      }
+
+      .process-marker {
+        grid-row: 1 / span 2;
+        margin: 0;
+      }
+
+      .process-step h3 { margin-top: 2px; }
+      .process-step p { max-width: 100%; }
+
+      .team-panel {
+        padding: 28px 20px;
+        border-radius: 22px;
+      }
+
+      .team-visual { padding: 18px 14px; }
+
+      .team-role {
+        grid-template-columns: 26px minmax(0, 1fr);
+        gap: 10px;
+      }
+
+      .role-tag {
+        grid-column: 2;
+        justify-self: start;
+      }
+
+      .faq-list summary { font-size: 15px; }
+
+      .final-cta h2 { font-size: clamp(40px, 11vw, 54px); }
+
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 34px 20px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .mobile-cta { display: grid; }
+
+      body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+    }
+
+    @media (max-width: 380px) {
+      .orbit-node { width: 126px; }
+      .orbit-center { width: 116px; height: 116px; }
+      .orbit-center strong { font-size: 21px; }
+      .expertise-item { padding: 17px 12px; }
+      .expertise-item h3 { font-size: 16px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "URA Technology",
+    "url": "https://uratechnology.com/",
+    "description": "URA connects companies with experienced product, design and technology specialists, from individual experts to complete digital product teams.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Amesbury",
+      "addressRegion": "Massachusetts",
+      "addressCountry": "US"
+    },
+    "sameAs": []
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="URA Technology home">
+        <span class="brand-mark" aria-hidden="true">U.</span>
+        <span class="brand-name">URA<small>Technology</small></span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="#solutions">How we help</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#talent">Meet specialists</a></li>
+          <li><a href="#process">Our process</a></li>
+          <li><a href="#about">About URA</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="button button-dark" href="https://uratechnology.com/contact">Let's talk <span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">People · Products · Progress</span>
+          <h1>Build what’s next with the <span>right people.</span></h1>
+          <p>
+            Bring experienced product, design and technology specialists into your business —
+            from one expert who fills a gap to a complete team that takes your product forward.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://uratechnology.com/talent">Find your specialist <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="https://uratechnology.com/contact">Build your team <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-dot" aria-hidden="true"></span>
+            Meet the specialists before deciding to work together.
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-label="Illustration showing specialists connected around a shared digital product">
+          <div class="orbit" aria-hidden="true"></div>
+          <div class="orbit-center">
+            <div>
+              <strong>URA</strong>
+              <small>The right connection</small>
+            </div>
+          </div>
+
+          <div class="orbit-node node-one">
+            <div class="node-top">
+              <span class="node-symbol">UX</span>
+              <div><strong>Product design</strong><small>Understand the user</small></div>
+            </div>
+            <span class="node-status">Specialist expertise</span>
+          </div>
+
+          <div class="orbit-node node-two">
+            <div class="node-top">
+              <span class="node-symbol">FE</span>
+              <div><strong>Front-end</strong><small>Build the experience</small></div>
+            </div>
+            <span class="node-status">Specialist expertise</span>
+          </div>
+
+          <div class="orbit-node node-three">
+            <div class="node-top">
+              <span class="node-symbol">BE</span>
+              <div><strong>Back-end</strong><small>Power the product</small></div>
+            </div>
+            <span class="node-status">Specialist expertise</span>
+          </div>
+
+          <div class="orbit-node node-four">
+            <div class="node-top">
+              <span class="node-symbol">PM</span>
+              <div><strong>Product delivery</strong><small>Move work forward</small></div>
+            </div>
+            <span class="node-status">Specialist expertise</span>
+          </div>
+
+          <div class="hero-art-label">One expert <span>or</span> a connected team</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Selected companies URA has worked with">
+      <div class="container proof-inner">
+        <div class="proof-label">Companies we've worked with</div>
+        <div class="proof-names">
+          <span>Avelo Airlines</span>
+          <span>Forte Technologies</span>
+          <span>Heat Hot Sauce Shop</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="routes-section" id="solutions">
+      <div class="container">
+        <div class="routes-head reveal">
+          <div>
+            <span class="eyebrow">Start with what you need</span>
+            <h2 class="section-heading">Different goals.<br>One clear way forward.</h2>
+            <p class="section-intro">
+              Whether you need a particular skill, more capacity or a team to deliver a product,
+              start with the challenge in front of you.
+            </p>
+          </div>
+          <a class="button button-outline" href="https://uratechnology.com/contact">Talk through your needs <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="route-list">
+          <a class="route reveal" href="https://uratechnology.com/talent">
+            <span class="route-number">01 /</span>
+            <h3>Find a specialist</h3>
+            <p>Bring in the expertise your team is missing — from design and development to data, QA and platform engineering.</p>
+            <span class="route-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="route reveal" href="https://uratechnology.com/contact">
+            <span class="route-number">02 /</span>
+            <h3>Extend your team</h3>
+            <p>Add experienced people to your existing workflow and strengthen the capabilities you already have.</p>
+            <span class="route-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="route reveal" href="https://uratechnology.com/contact">
+            <span class="route-number">03 /</span>
+            <h3>Build a product team</h3>
+            <p>Bring together the right mix of product, design and engineering skills around a shared delivery goal.</p>
+            <span class="route-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="route reveal" href="https://uratechnology.com/contact">
+            <span class="route-number">04 /</span>
+            <h3>Build a digital product</h3>
+            <p>Start with your idea, define the expertise required and explore the people who can help move it towards delivery.</p>
+            <span class="route-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="expertise-section" id="expertise">
+      <div class="container">
+        <div class="expertise-top reveal">
+          <div>
+            <span class="eyebrow">Connected capabilities</span>
+            <h2 class="section-heading">The skills behind<br>stronger digital products.</h2>
+          </div>
+          <p class="section-intro">
+            Access specialist knowledge across the stages of product planning, design,
+            engineering and delivery.
+          </p>
+        </div>
+
+        <!-- Exactly six custom SVG icons, displayed in two rows of three. -->
+        <div class="expertise-grid">
+          <article class="expertise-item reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Product strategy icon">
+                <path d="M5 25V7h22v18H5Z"/>
+                <path d="M10 20l4-5 4 3 5-7"/>
+                <path d="M19 11h4v4"/>
+                <path d="M10 10h4"/>
+              </svg>
+            </div>
+            <h3>Product & project management</h3>
+            <p>Product strategists, project managers and delivery specialists who help teams plan and move work forward.</p>
+          </article>
+
+          <article class="expertise-item reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Design and user experience icon">
+                <path d="M7 6h18v20H7z"/>
+                <path d="M11 11h10M11 15h6"/>
+                <path d="M12 22l4-4 4 4"/>
+                <circle cx="22" cy="10" r="2"/>
+              </svg>
+            </div>
+            <h3>Product & UX/UI design</h3>
+            <p>Product designers, UX/UI designers and researchers focused on useful, thoughtful digital experiences.</p>
+          </article>
+
+          <article class="expertise-item reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Front-end development icon">
+                <path d="M12 9 5 16l7 7M20 9l7 7-7 7"/>
+                <path d="m18 6-4 20"/>
+              </svg>
+            </div>
+            <h3>Front-end development</h3>
+            <p>Specialists working across modern front-end frameworks and technologies to build product interfaces.</p>
+          </article>
+
+          <article class="expertise-item reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Back-end engineering icon">
+                <rect x="5" y="6" width="22" height="8" rx="2"/>
+                <rect x="5" y="18" width="22" height="8" rx="2"/>
+                <path d="M10 10h.01M10 22h.01M15 10h7M15 22h7"/>
+              </svg>
+            </div>
+            <h3>Back-end & full-stack</h3>
+            <p>Engineering expertise across APIs, application architecture, integrations and full-stack product development.</p>
+          </article>
+
+          <article class="expertise-item reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Mobile development icon">
+                <rect x="9" y="3.5" width="14" height="25" rx="3"/>
+                <path d="M13 7h6M14 24h4"/>
+                <path d="M13 14h6M16 11v6"/>
+              </svg>
+            </div>
+            <h3>Mobile development</h3>
+            <p>iOS, Android and cross-platform mobile specialists for products designed to work beyond the desktop.</p>
+          </article>
+
+          <article class="expertise-item reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Quality assurance icon">
+                <path d="M16 4 26 8v7c0 6-4 10-10 13C10 25 6 21 6 15V8l10-4Z"/>
+                <path d="m11 16 3 3 7-7"/>
+              </svg>
+            </div>
+            <h3>QA, platform & data</h3>
+            <p>Quality assurance, automation, platform engineering, analytics and business intelligence capabilities.</p>
+          </article>
+        </div>
+
+        <div class="expertise-foot">
+          <p>Need a different skill set? Start with the product challenge and define the expertise together.</p>
+          <a class="button button-primary" href="https://uratechnology.com/contact">Tell us what you need <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="talent-section" id="talent">
+      <div class="container talent-layout">
+        <div class="talent-copy reveal">
+          <span class="eyebrow">People make the difference</span>
+          <h2 class="section-heading">Meet the expertise behind the work.</h2>
+          <p class="section-intro">
+            Explore a network of product, design and technology specialists.
+            Get to know the people and their experience before deciding who fits your needs.
+          </p>
+          <a class="button button-dark" href="https://uratechnology.com/talent">Explore all specialists <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="talent-content reveal">
+          <div class="talent-list">
+            <article class="talent-person">
+              <div class="person-initials" aria-hidden="true">AD</div>
+              <div>
+                <h3>Aldi Disha</h3>
+                <p>Senior Developer / Architect · Java · Albania</p>
+              </div>
+              <span class="person-experience">12+ years</span>
+            </article>
+
+            <article class="talent-person">
+              <div class="person-initials" aria-hidden="true">AP</div>
+              <div>
+                <h3>Aleksander Papa</h3>
+                <p>Front-End Software Engineer · Angular · Albania</p>
+              </div>
+              <span class="person-experience">4+ years</span>
+            </article>
+
+            <article class="talent-person">
+              <div class="person-initials" aria-hidden="true">AS</div>
+              <div>
+                <h3>Amina Sinaj</h3>
+                <p>Data Analyst & BI Developer · Power BI · Albania</p>
+              </div>
+              <span class="person-experience">7+ years</span>
+            </article>
+
+            <article class="talent-person">
+              <div class="person-initials" aria-hidden="true">AA</div>
+              <div>
+                <h3>Ardit Arapi</h3>
+                <p>Senior Python Engineer · APIs & microservices · Albania</p>
+              </div>
+              <span class="person-experience">11+ years</span>
+            </article>
+          </div>
+          <p class="talent-caption">Examples from the specialist profiles displayed on URA's current website. Availability and profile details should be reconfirmed before publication.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section" id="process">
+      <div class="container">
+        <div class="process-heading reveal">
+          <div>
+            <span class="eyebrow">A straightforward way to start</span>
+            <h2 class="section-heading">From first conversation<br>to working together.</h2>
+          </div>
+          <p class="section-intro">
+            A clear process helps you understand what happens next and gives you
+            the opportunity to meet the people before making a decision.
+          </p>
+        </div>
+
+        <div class="process-track">
+          <article class="process-step reveal">
+            <span class="process-marker">01</span>
+            <h3>Tell us what you're building</h3>
+            <p>Share your product, goals, timeline and the expertise you need.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="process-marker">02</span>
+            <h3>Review your shortlist</h3>
+            <p>URA identifies specialists whose experience aligns with your requirements.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="process-marker">03</span>
+            <h3>Meet the specialists</h3>
+            <p>Review profiles and have a direct conversation before deciding.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="process-marker">04</span>
+            <h3>Start working together</h3>
+            <p>Agree the next steps and begin the engagement with the right people.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section" id="about">
+      <div class="container">
+        <div class="team-panel reveal">
+          <div class="team-copy">
+            <span class="eyebrow">A team shaped around your goal</span>
+            <h2>Not just more people. The right mix of people.</h2>
+            <p>
+              A digital product often needs several kinds of expertise working together.
+              Start with the outcome you want to achieve, then explore the roles that can
+              help make it happen.
+            </p>
+            <a class="button" href="https://uratechnology.com/contact">Discuss your team <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="team-visual" aria-label="Illustrative example of a product team composition">
+            <div class="team-visual-top">
+              <span>Example team mix</span>
+              <span>Product delivery</span>
+            </div>
+            <div class="team-role">
+              <span class="role-index">01</span>
+              <div><strong>Product designer</strong><small>Experience & user needs</small></div>
+              <span class="role-tag">Design</span>
+            </div>
+            <div class="team-role">
+              <span class="role-index">02</span>
+              <div><strong>Front-end developer</strong><small>Interface & interaction</small></div>
+              <span class="role-tag">Build</span>
+            </div>
+            <div class="team-role">
+              <span class="role-index">03</span>
+              <div><strong>Back-end developer</strong><small>Application & integrations</small></div>
+              <span class="role-tag">Build</span>
+            </div>
+            <div class="team-role">
+              <span class="role-index">04</span>
+              <div><strong>QA engineer</strong><small>Quality & testing</small></div>
+              <span class="role-tag">Quality</span>
+            </div>
+            <p class="team-visual-note">Illustrative team composition only — roles are selected according to each project's actual requirements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="questions">
+      <div class="container faq-layout">
+        <div class="reveal">
+          <span class="eyebrow">Good to know</span>
+          <h2 class="section-heading">A few things you may be wondering.</h2>
+          <p class="section-intro">A little more clarity before you take the next step.</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <details>
+            <summary>Can I start with just one specialist?</summary>
+            <p>Yes. URA's offer includes connecting companies with an individual expert as well as helping form a wider digital product team.</p>
+          </details>
+          <details>
+            <summary>Can I meet a specialist before making a decision?</summary>
+            <p>URA's published process includes meeting the proposed specialists before deciding to start working together.</p>
+          </details>
+          <details>
+            <summary>What information should I share first?</summary>
+            <p>Start with what you are building, the outcome you want, the skills you need and any important timing considerations. A few details are enough to begin the conversation.</p>
+          </details>
+          <details>
+            <summary>What happens after I send an enquiry?</summary>
+            <p>URA's contact page says the team aims to respond within one working day, then arrange a short call to discuss scope, roles and timing.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container reveal">
+        <span class="eyebrow">People · Products · Progress</span>
+        <h2>Your next product milestone starts with the right people.</h2>
+        <p>Tell URA what you're working towards. Start a conversation about the expertise or team that could help you move forward.</p>
+        <a class="button button-primary" href="https://uratechnology.com/contact">Start a conversation <span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="#home" aria-label="URA Technology home">
+            <span class="brand-mark" aria-hidden="true">U.</span>
+            <span class="brand-name">URA<small>Technology</small></span>
+          </a>
+          <p>Connecting companies with the people who build great digital products.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#solutions">How we help</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="https://uratechnology.com/talent">Find talent</a></li>
+            <li><a href="#process">Our process</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="https://uratechnology.com/contact">Contact URA</a></li>
+            <li><p>Amesbury, Massachusetts<br>USA</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="current-year">2026</span> URA Technology. All rights reserved.</span>
+        <span>People · Products · Progress</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Exactly two persistent mobile conversion actions. -->
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <a class="button button-dark" href="https://uratechnology.com/talent">Find a specialist</a>
+    <a class="button button-primary" href="https://uratechnology.com/contact">Build your team</a>
+  </div>
+
+  <script>
+    (function () {
+      const menuButton = document.querySelector(".menu-toggle");
+      const navigation = document.querySelector(".nav-links");
+      const navLinks = navigation.querySelectorAll("a");
+
+      function closeMenu() {
+        navigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
+        document.body.classList.remove("menu-open");
+      }
+
+      menuButton.addEventListener("click", function () {
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+        if (isOpen) {
+          closeMenu();
+        } else {
+          navigation.classList.add("is-open");
+          menuButton.setAttribute("aria-expanded", "true");
+          menuButton.setAttribute("aria-label", "Close navigation");
+          document.body.classList.add("menu-open");
+        }
+      });
+
+      navLinks.forEach(function (link) {
+        link.addEventListener("click", closeMenu);
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeMenu();
+      });
+
+      const year = document.getElementById("current-year");
+      if (year) year.textContent = new Date().getFullYear();
+
+      const revealItems = document.querySelectorAll(".reveal");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if ("IntersectionObserver" in window && !reduceMotion) {
+        const observer = new IntersectionObserver(function (entries, currentObserver) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              currentObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        revealItems.forEach(function (item) {
+          observer.observe(item);
+        });
+      } else {
+        revealItems.forEach(function (item) {
+          item.classList.add("is-visible");
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
